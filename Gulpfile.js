@@ -56,7 +56,7 @@ function styles() {
 // КОПИРУЕТ ФАЙЛЫ И ПАПКИ ИЗ SRC В docs
 // =============================================================================
 function copyFiles() {
-  return src(['_src/img/**', '_src/fonts/**'], {
+  return src(['_src/img/**', '_src/fonts/**', '_src/robots.txt'], {
       'base': '_src'
     }) // base треб. для коректного переноса файлов и папок (для fonts)
     .pipe(dest('docs'));

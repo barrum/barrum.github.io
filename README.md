@@ -16,4 +16,4 @@
 В папке build создается подпапка base64 с файлом index.html
 Не забыть перенести стили в index.html или найти плагин, который будет делать это автоматом.
 
-![Иллюстрация](https://github.com/barrum/kp-oknarosta/raw/main/_src/img/all-optim.png)
+![Иллюстрация](https://github.com/barrum/kp-oknarosta/raw/ma/_src/img/all-optim.png)
