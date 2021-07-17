@@ -1,0 +1,153 @@
+// ТИПОГРАФИКА
+html {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background: #fff;
+  color: @color;
+}
+
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
+  margin: 0 0 20px 0;
+}
+
+/* Add margin if adjacent element */
+* + p,
+* + ul,
+* + ol,
+* + dl,
+* + pre,
+* + address,
+* + fieldset,
+* + figure {
+  margin-top: @margin;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 @margin 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+
+/* Add margin if adjacent element */
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: @heading;
+}
+
+// Remove the gap between embedded content and the bottom of their containers.
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * 1. Add responsiveness.
+ * 2. Auto-scale the height. Only needed if `height` attribute is present.
+ * 3. Corrects responsive `max-width` behavior if padding and border are used.
+ * 4. Exclude SVGs for IE11 because they don't preserve their aspect ratio.
+ */
+
+canvas,
+img,
+video {
+  /* 1 */
+  max-width: 100%;
+  /* 2 */
+  height: auto;
+  /* 3 */
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+// ПЕЧАТЬ
+@media print {
+  *,
+  *::before,
+  *::after {
+    // background: transparent !important;
+    // color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0;
+  }
+
+  // @page {
+  //   margin: 0.5cm;
+  // }
+
+  // @page :first {
+  //   margin: 0;
+  // }
+  
+  // page-break-after: always; разрыв страницы после данного класса
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  //   a[href]:after {
+  //     content: " (" attr(href) ")";
+  // }
+}
