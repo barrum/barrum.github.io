@@ -426,81 +426,26 @@ table {
     page-break-after: avoid;
   }
 }
-.o-cover {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.wrapper {
+  height: 100vh;
+  background: url(../img/bg-grass.jpg) no-repeat left bottom, #E7EFF9 url(../img/bg-skrep.png) no-repeat right top;
+}
+.container {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 794px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 12px;
-  background-color: #BFD7B5;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
-@media (min-width: 794px), print {
-  .o-cover {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media print {
-  .o-cover {
-    height: 297mm;
-    width: 210mm;
-  }
-}
-.o-cover {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 794px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 12px;
-  background-color: #BFD7B5;
-}
-@media (min-width: 794px), print {
-  .o-cover {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media print {
-  .o-cover {
-    height: 297mm;
-    width: 210mm;
-  }
-}
-/* ========================================================================
-   Фоновые картинки
- ========================================================================== */
-/* body {
-  background: #292929 url("/img/bb-mobile.jpg") no-repeat 50% 0;
-  background-size: 320px auto;
-  min-height: 750px;
-}
-
-@media (min-width: 768px) {
-  body {
-    background: #292929 url("/img/bb-tablet.jpg") no-repeat 50% 0;
-    background-size: 768px auto;
-  }
-}*/
-/*  body {
-      background: #292929 url("/img/bb-desktop.jpg") no-repeat 50% 0;
-      background-size: 1920px auto;
-      min-height: 750px;
-    }*/
-/* ========================================================================
-     Линии для визуализации
-   ========================================================================== */
-body * {
-  outline: 1px dotted red;
-  outline-offset: -1px;
-  position: relative;
+.close {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
